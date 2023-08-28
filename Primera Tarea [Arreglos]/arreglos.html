@@ -7,151 +7,237 @@
     <script src="JS/script.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <h1>Introducción a los Arreglos en JavaScript</h1>
-    <p>
-      En JavaScript, un arreglo es una variable que se utiliza para almacenar
-      diferentes tipos de datos. Básicamente almacena diferentes elementos en
-      una caja y luego se puede evaluar con la variable.
-    </p>
+  <body class="bg-gray-100 min-h-screen p-8">
+    <div class="max-w-3xl mx-auto">
+      <h1 class="text-3xl font-bold mb-4 text-center">
+        <a href="../index.html" class="text-blue-500 text-2xl">← </a>
+        Introducción a los Arreglos en JavaScript
+      </h1>
+      <p class="text-gray-700 mb-8">
+        En JavaScript, un arreglo es una variable que se utiliza para almacenar
+        diferentes tipos de datos. Básicamente almacena diferentes elementos en
+        una caja y luego se puede evaluar con la variable.
+      </p>
 
-    <h2>Declaración de Arreglos en JavaScript</h2>
-    <code>let miArreglo = [];</code>
-    <code>let miArregloDatos = ["Edwar", 1, 2.55, false];</code>
+      <h2 class="text-2xl font-semibold mb-4 text-center">
+        Declaración de Arreglos en JavaScript
+      </h2>
+      <code class="block bg-gray-200 p-2 mb-4"> let miArreglo = []; </code>
+      <code class="block bg-gray-200 p-2">
+        let miArregloDatos = ["Edwar", 1, 2.55, false];
+      </code>
 
-    <h2>Métodos para Manipular Arreglos en JavaScript</h2>
-    <h3>Método toString()</h3>
-    <code>
-      let miArregloToString = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
-      "Perro"]; console.log(miArregloToString.toString());
-    </code>
+      <h2 class="text-2xl font-semibold mb-4 text-center mt-4">
+        Métodos para Manipular Arreglos en JavaScript
+      </h2>
+      <h3 class="text-xl font-semibold mt-6">Método toString()</h3>
+      <p class="text-gray-700 mb-0">
+        Convierte un arreglo en una cadena de texto
+      </p>
+      <code class="block bg-sky-200 p-2 mb-4">
+        let miArregloToString = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
+        "Perro"]; console.log(miArregloToString.toString());
+      </code>
 
-    <h3>Método join()</h3>
-    <code>
-      let miArregloJoin = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
-      "Perro"]; console.log(miArregloJoin.join(" - "));
-    </code>
+      <h3 class="text-xl font-semibold mt-6">Método join()</h3>
+      <p class="text-gray-700 mb-0">
+        Convierte un arreglo en una cadena de texto, pero con un separador
+        especifico
+      </p>
+      <code class="block bg-gray-200 p-2 mb-4">
+        let miArregloJoin = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
+        "Perro"]; console.log(miArregloJoin.join(" - "));
+      </code>
 
-    <h3>Método concat()</h3>
-    <code>
-      let miArregloConcat = ["1", "2", "3", "4", "5", "6"]; let miArregloConcat2
-      = ["7", "8", "9", "10", "11", "12"];
-      console.log(miArregloConcat.concat(miArregloConcat2));
-    </code>
+      <h3 class="text-xl font-semibold mt-6">Método concat()</h3>
+      <p class="text-gray-700 mb-0">Une dos o mas arreglos en uno solo</p>
+      <code class="block bg-sky-200 p-2 mb-4">
+        let miArregloConcat = ["1", "2", "3", "4", "5", "6"]; let
+        miArregloConcat2 = ["7", "8", "9", "10", "11", "12"];
+        console.log(miArregloConcat.concat(miArregloConcat2));
+      </code>
+      <h3 class="text-xl font-semibold mt-6">Método push()</h3>
+      <p class="text-gray-700 mb-0">
+        Agrega un elemento al final del arreglo y cambia el arreglo original
+      </p>
+      <code class="block bg-gray-200 p-2 mb-4">
+        let miArregloPush = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
+        "Perro"]; miArregloPush.push("Gato"); console.log(miArregloPush);
+      </code>
 
-    <h3>Método push()</h3>
-    <code>
-      let miArregloPush = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
-      "Perro"]; miArregloPush.push("Gato"); console.log(miArregloPush);
-    </code>
+      <h3 class="text-xl font-semibold mt-6">Método pop()</h3>
+      <p class="text-gray-700 mb-0">
+        Elimina el ultimo elemento del arreglo y cambia el arreglo original y
+        devuelve el arreglo modificado
+      </p>
+      <code class="block bg-sky-200 p-2 mb-4">
+        let miArregloPop = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
+        "Perro"]; miArregloPop.pop(); console.log(miArregloPop);
+      </code>
 
-    <h3>Método pop()</h3>
-    <code>
-      let miArregloPop = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
-      "Perro"]; miArregloPop.pop(); console.log(miArregloPop);
-    </code>
+      <h3 class="text-xl font-semibold mt-6">Método shift()</h3>
+      <p class="text-gray-700 mb-0">
+        Elimina el primer elemento del arreglo y cambia el arreglo original y
+        devuelve el arreglo modificado
+      </p>
+      <code class="block bg-gray-200 p-2 mb-4">
+        let miArregloShift = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
+        "Perro"]; miArregloShift.shift(); console.log(miArregloShift);
+      </code>
 
-    <h3>Método shift()</h3>
-    <code>
-      let miArregloShift = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
-      "Perro"]; miArregloShift.shift(); console.log(miArregloShift);
-    </code>
+      <h3 class="text-xl font-semibold mt-6">Método unshift()</h3>
+      <p class="text-gray-700 mb-0">
+        Agrega un elemento al inicio del arreglo y cambia el arreglo original y
+        devuelve el arreglo modificado
+      </p>
+      <code class="block bg-sky-200 p-2 mb-4">
+        let miArregloUnshift = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
+        "Perro"]; miArregloUnshift.unshift("Gato");
+        console.log(miArregloUnshift);
+      </code>
+      <h3 class="text-xl font-semibold mt-6">Método splice()</h3>
+      <p class="text-gray-700 mb-0">
+        Agrega un elemento en una posicion especifica del arreglo y cambia el
+        arreglo original y devuelve el arreglo modificado
+      </p>
+      <code class="block bg-gray-200 p-2 mb-4">
+        let miArregloSplice = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
+        "Perro"]; miArregloSplice.splice(2, 0, "Gato", "Pato");
+        console.log(miArregloSplice);
+      </code>
 
-    <h3>Método unshift()</h3>
-    <code>
-      let miArregloUnshift = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
-      "Perro"]; miArregloUnshift.unshift("Gato"); console.log(miArregloUnshift);
-    </code>
+      <h3 class="text-xl font-semibold mt-6">Método slice()</h3>
+      <p class="text-gray-700 mb-0">
+        Este método es similar a splice() pero muy diferente. Devuelve
+        subarreglos en lugar de subcadenas
+      </p>
+      <code class="block bg-sky-200 p-2 mb-4">
+        let miArregloSlice = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
+        "Perro"]; console.log(miArregloSlice.slice(2, 4));
+      </code>
 
-    <h3>Método splice()</h3>
-    <code>
-      let miArregloSplice = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
-      "Perro"]; miArregloSplice.splice(2, 0, "Gato", "Pato");
-      console.log(miArregloSplice);
-    </code>
+      <h3 class="text-xl font-semibold mt-6">Método split()</h3>
+      <p class="text-gray-700 mb-0">
+        Convierte una cadena de texto en un arreglo
+      </p>
+      <code class="block bg-gray-200 p-2 mb-4">
+        let miArregloSplit = "Abeja, Burro, Caballo, Vaca, Zorro, Perro";
+        console.log(miArregloSplit.split(", "));
+      </code>
 
-    <h3>Método slice()</h3>
-    <code>
-      let miArregloSlice = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
-      "Perro"]; console.log(miArregloSlice.slice(2, 4));
-    </code>
+      <h3 class="text-xl font-semibold mt-6">Método indexOf()</h3>
+      <p class="text-gray-700 mb-0">
+        Devuelve la posicion de un elemento en el arreglo y devuelve -1 si no lo
+        encuentra
+      </p>
+      <code class="block bg-sky-200 p-2 mb-4">
+        let miArregloIndexOf = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
+        "Perro"]; console.log(miArregloIndexOf.indexOf("Vaca"));
+        console.log(miArregloIndexOf.indexOf("Godzilla"));
+      </code>
 
-    <h3>Método split()</h3>
-    <code>
-      let miArregloSplit = "Abeja, Burro, Caballo, Vaca, Zorro, Perro";
-      console.log(miArregloSplit.split(", "));
-    </code>
+      <h3 class="text-xl font-semibold mt-6">Método lastIndexOf()</h3>
+      <p class="text-gray-700 mb-0">
+        Devuelve la posicion de un elemento en el arreglo y devuelve -1 si no lo
+        encuentra, pero empieza a buscar desde el final del arreglo
+      </p>
+      <code class="block bg-gray-200 p-2 mb-4">
+        let miArregloLastIndexOf = ["Abeja", "Burro", "Caballo", "Vaca",
+        "Zorro", "Perro"];
+        console.log(miArregloLastIndexOf.lastIndexOf("Vaca"));
+        console.log(miArregloLastIndexOf.lastIndexOf("Godzilla"));
+      </code>
 
-    <h3>Método indexOf()</h3>
-    <code>
-      let miArregloIndexOf = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
-      "Perro"]; console.log(miArregloIndexOf.indexOf("Vaca"));
-      console.log(miArregloIndexOf.indexOf("Godzilla"));
-    </code>
+      <h3 class="text-xl font-semibold mt-6">Método filter()</h3>
+      <p class="text-gray-700 mb-0">
+        Crea un nuevo arreglo con los elementos que cumplan con la condicion
+      </p>
+      <code class="block bg-sky-200 p-2 mb-4">
+        let miArregloFilter = [1, 2, 3, 4, 5, 6, 7, 8, 9]; let miArregloFilter2
+        = miArregloFilter.filter((numero) => numero > 5);
+        console.log(miArregloFilter2);
+      </code>
 
-    <h3>Método lastIndexOf()</h3>
-    <code>
-      let miArregloLastIndexOf = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
-      "Perro"]; console.log(miArregloLastIndexOf.lastIndexOf("Vaca"));
-      console.log(miArregloLastIndexOf.lastIndexOf("Godzilla"));
-    </code>
+      <h3 class="text-xl font-semibold mt-6">Método map()</h3>
+      <p class="text-gray-700 mb-0">
+        Este método crea un nuevo arreglo manipulando los valores de un arreglo.
+      </p>
+      <code class="block bg-gray-200 p-2 mb-4">
+        let miArregloMap = [1, 2, 3, 4, 5, 6, 7, 8, 9]; let miArregloMap2 =
+        miArregloMap.map((numero) => numero * 2); console.log(miArregloMap2);
+      </code>
 
-    <h3>Método filter()</h3>
-    <code>
-      let miArregloFilter = [1, 2, 3, 4, 5, 6, 7, 8, 9]; let miArregloFilter2 =
-      miArregloFilter.filter((numero) => numero > 5);
-      console.log(miArregloFilter2);
-    </code>
+      <h3 class="text-xl font-semibold mt-6">Método reduce()</h3>
+      <p class="text-gray-700 mb-0">
+        Este método reduce los valores de un arreglo a un solo valor.
+      </p>
+      <code class="block bg-sky-200 p-2 mb-4">
+        let miArregloReduce = [1, 2, 3, 4, 5, 6, 7, 8, 9]; let miArregloReduce2
+        = miArregloReduce.reduce((total, numero) => total + numero);
+        console.log(miArregloReduce2);
+      </code>
 
-    <h3>Método map()</h3>
-    <code>
-      let miArregloMap = [1, 2, 3, 4, 5, 6, 7, 8, 9]; let miArregloMap2 =
-      miArregloMap.map((numero) => numero * 2); console.log(miArregloMap2);
-    </code>
+      <h3 class="text-xl font-semibold mt-6">Método find()</h3>
+      <p class="text-gray-700 mb-0">
+        Este método devuelve el primer elemento que cumpla con la condicion
+      </p>
+      <code class="block bg-gray-200 p-2 mb-4">
+        let miArregloFind = [1, 2, 3, 4, 5, 6, 7, 8, 9]; let miArregloFind2 =
+        miArregloFind.find((numero) => numero > 5); console.log(miArregloFind2);
+      </code>
 
-    <h3>Método reduce()</h3>
-    <code>
-      let miArregloReduce = [1, 2, 3, 4, 5, 6, 7, 8, 9]; let miArregloReduce2 =
-      miArregloReduce.reduce((total, numero) => total + numero);
-      console.log(miArregloReduce2);
-    </code>
+      <h3 class="text-xl font-semibold mt-6">Método findIndex()</h3>
+      <p class="text-gray-700 mb-0">
+        Este método devuelve la posicion del primer elemento que cumpla con la
+        condicion
+      </p>
+      <code class="block bg-sky-200 p-2 mb-4">
+        let miArregloFindIndex = [1, 2, 3, 4, 5, 6, 7, 8, 9]; let
+        miArregloFindIndex2 = miArregloFindIndex.findIndex((numero) => numero >
+        5); console.log(miArregloFindIndex2);
+      </code>
 
-    <h3>Método find()</h3>
-    <code>
-      let miArregloFind = [1, 2, 3, 4, 5, 6, 7, 8, 9]; let miArregloFind2 =
-      miArregloFind.find((numero) => numero > 5); console.log(miArregloFind2);
-    </code>
+      <h3 class="text-xl font-semibold mt-6">Método every()</h3>
+      <p class="text-gray-700 mb-0">
+        Este método devuelve true si todos los elementos del arreglo cumplen con
+        la condicion
+      </p>
+      <code class="block bg-gray-200 p-2 mb-4">
+        let miArregloEvery = [6, 7, 8, 9]; let miArregloEvery2 =
+        miArregloEvery.every((numero) => numero > 5);
+        console.log(miArregloEvery2);
+      </code>
 
-    <h3>Método findIndex()</h3>
-    <code>
-      let miArregloFindIndex = [1, 2, 3, 4, 5, 6, 7, 8, 9]; let
-      miArregloFindIndex2 = miArregloFindIndex.findIndex((numero) => numero >
-      5); console.log(miArregloFindIndex2);
-    </code>
+      <h3 class="text-xl font-semibold mt-6">Método some()</h3>
+      <p class="text-gray-700 mb-0">
+        Este método devuelve true si alguno de los elementos del arreglo cumple
+        con la condicion
+      </p>
+      <code class="block bg-sky-200 p-2 mb-4">
+        let miArregloSome = [1, 7, 2, 3]; let miArregloSome2 =
+        miArregloSome.some((numero) => numero > 5); console.log(miArregloSome2);
+      </code>
 
-    <h3>Método every()</h3>
-    <code>
-      let miArregloEvery = [6, 7, 8, 9]; let miArregloEvery2 =
-      miArregloEvery.every((numero) => numero > 5);
-      console.log(miArregloEvery2);
-    </code>
+      <h3 class="text-xl font-semibold mt-6">Método forEach()</h3>
+      <p class="text-gray-700 mb-0">
+        Este método ejecuta una funcion por cada elemento del arreglo
+      </p>
+      <code class="block bg-gray-200 p-2 mb-4">
+        let miArregloForEach = [1, 7, 2, 3]; miArregloForEach.forEach((numero)
+        => console.log(numero));
+      </code>
 
-    <h3>Método some()</h3>
-    <code>
-      let miArregloSome = [1, 7, 2, 3]; let miArregloSome2 =
-      miArregloSome.some((numero) => numero > 5); console.log(miArregloSome2);
-    </code>
-
-    <h3>Método forEach()</h3>
-    <code>
-      let miArregloForEach = [1, 7, 2, 3]; miArregloForEach.forEach((numero) =>
-      console.log(numero));
-    </code>
-
-    <h3>Método reverse()</h3>
-    <code>
-      let miArregloReverse = [1, 7, 2, 3];
-      console.log(miArregloReverse.reverse());
-    </code>
+      <h3 class="text-xl font-semibold mt-6">Método reverse()</h3>
+      <p class="text-gray-700 mb-0">
+        Este método invierte el orden de los elementos del arreglo
+      </p>
+      <code class="block bg-sky-200 p-2 mb-4">
+        let miArregloReverse = [1, 7, 2, 3];
+        console.log(miArregloReverse.reverse());
+      </code>
+      <footer class="text-center py-4 text-gray-500">
+        &copy; Edwar Castellanos Portillo - Seccion A.
+      </footer>
+    </div>
   </body>
 </html>
