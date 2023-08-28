@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arreglos</title>
+    <script src="JS/script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h1>Introducción a los Arreglos en JavaScript</h1>
+    <p>
+      En JavaScript, un arreglo es una variable que se utiliza para almacenar
+      diferentes tipos de datos. Básicamente almacena diferentes elementos en
+      una caja y luego se puede evaluar con la variable.
+    </p>
+
+    <h2>Declaración de Arreglos en JavaScript</h2>
+    <code>let miArreglo = [];</code>
+    <code>let miArregloDatos = ["Edwar", 1, 2.55, false];</code>
+
+    <h2>Métodos para Manipular Arreglos en JavaScript</h2>
+    <h3>Método toString()</h3>
+    <code>
+      let miArregloToString = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
+      "Perro"]; console.log(miArregloToString.toString());
+    </code>
+
+    <h3>Método join()</h3>
+    <code>
+      let miArregloJoin = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
+      "Perro"]; console.log(miArregloJoin.join(" - "));
+    </code>
+
+    <h3>Método concat()</h3>
+    <code>
+      let miArregloConcat = ["1", "2", "3", "4", "5", "6"]; let miArregloConcat2
+      = ["7", "8", "9", "10", "11", "12"];
+      console.log(miArregloConcat.concat(miArregloConcat2));
+    </code>
+
+    <h3>Método push()</h3>
+    <code>
+      let miArregloPush = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
+      "Perro"]; miArregloPush.push("Gato"); console.log(miArregloPush);
+    </code>
+
+    <h3>Método pop()</h3>
+    <code>
+      let miArregloPop = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
+      "Perro"]; miArregloPop.pop(); console.log(miArregloPop);
+    </code>
+
+    <h3>Método shift()</h3>
+    <code>
+      let miArregloShift = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
+      "Perro"]; miArregloShift.shift(); console.log(miArregloShift);
+    </code>
+
+    <h3>Método unshift()</h3>
+    <code>
+      let miArregloUnshift = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
+      "Perro"]; miArregloUnshift.unshift("Gato"); console.log(miArregloUnshift);
+    </code>
+
+    <h3>Método splice()</h3>
+    <code>
+      let miArregloSplice = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
+      "Perro"]; miArregloSplice.splice(2, 0, "Gato", "Pato");
+      console.log(miArregloSplice);
+    </code>
+
+    <h3>Método slice()</h3>
+    <code>
+      let miArregloSlice = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
+      "Perro"]; console.log(miArregloSlice.slice(2, 4));
+    </code>
+
+    <h3>Método split()</h3>
+    <code>
+      let miArregloSplit = "Abeja, Burro, Caballo, Vaca, Zorro, Perro";
+      console.log(miArregloSplit.split(", "));
+    </code>
+
+    <h3>Método indexOf()</h3>
+    <code>
+      let miArregloIndexOf = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
+      "Perro"]; console.log(miArregloIndexOf.indexOf("Vaca"));
+      console.log(miArregloIndexOf.indexOf("Godzilla"));
+    </code>
+
+    <h3>Método lastIndexOf()</h3>
+    <code>
+      let miArregloLastIndexOf = ["Abeja", "Burro", "Caballo", "Vaca", "Zorro",
+      "Perro"]; console.log(miArregloLastIndexOf.lastIndexOf("Vaca"));
+      console.log(miArregloLastIndexOf.lastIndexOf("Godzilla"));
+    </code>
+
+    <h3>Método filter()</h3>
+    <code>
+      let miArregloFilter = [1, 2, 3, 4, 5, 6, 7, 8, 9]; let miArregloFilter2 =
+      miArregloFilter.filter((numero) => numero > 5);
+      console.log(miArregloFilter2);
+    </code>
+
+    <h3>Método map()</h3>
+    <code>
+      let miArregloMap = [1, 2, 3, 4, 5, 6, 7, 8, 9]; let miArregloMap2 =
+      miArregloMap.map((numero) => numero * 2); console.log(miArregloMap2);
+    </code>
+
+    <h3>Método reduce()</h3>
+    <code>
+      let miArregloReduce = [1, 2, 3, 4, 5, 6, 7, 8, 9]; let miArregloReduce2 =
+      miArregloReduce.reduce((total, numero) => total + numero);
+      console.log(miArregloReduce2);
+    </code>
+
+    <h3>Método find()</h3>
+    <code>
+      let miArregloFind = [1, 2, 3, 4, 5, 6, 7, 8, 9]; let miArregloFind2 =
+      miArregloFind.find((numero) => numero > 5); console.log(miArregloFind2);
+    </code>
+
+    <h3>Método findIndex()</h3>
+    <code>
+      let miArregloFindIndex = [1, 2, 3, 4, 5, 6, 7, 8, 9]; let
+      miArregloFindIndex2 = miArregloFindIndex.findIndex((numero) => numero >
+      5); console.log(miArregloFindIndex2);
+    </code>
+
+    <h3>Método every()</h3>
+    <code>
+      let miArregloEvery = [6, 7, 8, 9]; let miArregloEvery2 =
+      miArregloEvery.every((numero) => numero > 5);
+      console.log(miArregloEvery2);
+    </code>
+
+    <h3>Método some()</h3>
+    <code>
+      let miArregloSome = [1, 7, 2, 3]; let miArregloSome2 =
+      miArregloSome.some((numero) => numero > 5); console.log(miArregloSome2);
+    </code>
+
+    <h3>Método forEach()</h3>
+    <code>
+      let miArregloForEach = [1, 7, 2, 3]; miArregloForEach.forEach((numero) =>
+      console.log(numero));
+    </code>
+
+    <h3>Método reverse()</h3>
+    <code>
+      let miArregloReverse = [1, 7, 2, 3];
+      console.log(miArregloReverse.reverse());
+    </code>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Menu de Tareas</title>
+    <style>
+      .btn-blue {
+        display: block; 
+        width: 100%; 
+        padding: 0.5rem 1rem;
+        margin: 0.25rem 0; 
+        border: 1px solid #3490dc;
+        border-radius: 0.25rem;
+        background-color: #3490dc;
+        color: white;
+        text-align: center; 
+        transition: background-color 0.2s, color 0.2s;
+        text-decoration: none;
+      }
+
+      .btn-blue:hover {
+        background-color: orange;
+        border: 1px solid black;
+      }
+
+      .btn-blue:focus {
+        outline: none;
+        background-color: #2779bd;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="flex flex-col items-center justify-center min-h-screen bg-gray-100"
+    >
+      <div class="bg-white p-8 rounded-lg shadow-md w-96">
+        <h1 class="text-2xl font-bold mb-4 text-center">
+          Menu de Tareas de Desarrollo Web
+        </h1>
+        <ul class="list-none pl-6">
+          <li><a href="Primera Tarea [Arreglos]/arreglos.html" class="btn-blue">Tarea Arreglos</a></li>
+          <li><a href="Segunda Tarea [Api]/usuario.html" class="btn-blue">Tarea API</a></li>
+        </ul>
+      </div>
+      <footer class="text-center py-4 text-gray-500">
+        &copy; Edwar Castellanos Portillo - Seccion A.
+      </footer>
+    </div>
+  </body>
+</html>
